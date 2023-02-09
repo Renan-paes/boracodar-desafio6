@@ -50,7 +50,3 @@ Este foi um projeto desenvolvido como resposta ao desafio #6 do **[boracodar](ht
 
 ![perfil](https://user-images.githubusercontent.com/77288669/217940909-e61cb717-06dd-4842-9664-fe9a614062e8.jpg)
 
-
-##  🌎 Licença
-
-Este projeto está sob a licença do MIT. Consulte o arquivo [ LICENÇA ](https://github.com/VagnerNerves/productcard-boracodar/blob/master/LICENSE) para obter mais detalhes.
