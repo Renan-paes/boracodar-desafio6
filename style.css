@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --primary-color: rgba(0, 0, 0, 0.64);
+  --secondary-color: rgba(0, 0, 0, 0.88);
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem;
+}
+.general-container {
+  position: relative;
+}
+.container-1 {
+  background: #fff;
+  width: 32.7rem;
+  height: 19.1rem;
+  padding: 2.4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2.4rem;
+}
+
+.bloco-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data {
+  text-align: right;
+}
+
+.data li:first-child,
+.voo li:first-child {
+  color: rgba(0, 0, 0, 0.64);
+  font-size: 1.4rem;
+}
+
+.data li:last-child,
+.voo li:last-child {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 1.6rem;
+}
+
+.bloco-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ida li:first-child,
+.chegada li:first-child {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.ida {
+  position: relative;
+}
+
+.ida::before {
+  content: url(./img/Divider1.svg);
+  position: absolute;
+  bottom: -2.7rem;
+  left: -0.8rem;
+}
+
+.chegada {
+  text-align: right;
+}
+
+.ida li:nth-child(2),
+.chegada li:nth-child(2) {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.ida li:last-child,
+.chegada li:last-child {
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+}
+
+.ida li:nth-child(3) {
+  position: absolute;
+  top: 2.8rem;
+  right: -2.4rem;
+  animation: fly 5s forwards infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(30px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.chegada li:last-child {
+  margin-right: 1.4rem;
+}
+
+.chegada li:last-child::after {
+  content: "+1";
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.container-2 {
+  background: #fff;
+  width: 32.7rem;
+  height: 8.4rem;
+  padding: 2.4rem 3.2rem;
+  border-radius: 2.4rem;
+}
+
+.container-2 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.passageiro {
+  position: relative;
+}
+.passageiro::before {
+  content: url(./img/Divider1.svg);
+  position: absolute;
+  bottom: -2.7rem;
+  left: -0.8rem;
+}
+
+.passageiro li:first-child,
+.assento li:first-child {
+  font-family: Rubik;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.passageiro li:last-child,
+.assento li:last-child {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: rgba(0, 0, 0, 0.88);
+}
+.assento li:last-child {
+  text-align: end;
+}
+.container-3 {
+  background: #fff;
+  width: 32.7rem;
+  height: 26.9rem;
+  padding: 2.4rem 3.2rem;
+  border-radius: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container-3-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.embarque li:first-child,
+.terminal li:first-child,
+.portao li:first-child {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.embarque li:last-child {
+  color: #fff;
+  background: rgba(99, 59, 188, 1);
+  width: 5.4rem;
+  height: 2.7rem;
+  text-align: center;
+  line-height: 2.7rem;
+  border-radius: 0.8rem;
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+}
+
+.terminal li:last-child,
+.portao li:last-child {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.qrcode img {
+  width: 16rem;
+}
+.qrcode p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  padding-left: 0.5rem;
+}
+.info-final {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 1.6rem;
+}
+.info-final span {
+  font-weight: 500;
+  padding-right: 0.2rem;
+}
+
+.texto-final {
+  font-size: 1.4rem;
+  padding: 2rem 0rem;
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1rem;
+}
