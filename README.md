@@ -10,7 +10,7 @@
 Projeto desenvolvido com café ☕ e código 👨‍💻
 
 
-DEPLOY  <a href="https://Cartao-de-embarque.renanpaes92.repl.co" target="_blank">[ Replit ] 🔗</a>
+Link do site <a href="https://Cartao-de-embarque.renanpaes92.repl.co" target="_blank">[ Replit ] 🔗</a>
 
 
 ##  🖼️ Banner de apresentação
